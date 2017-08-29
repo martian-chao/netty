@@ -42,6 +42,7 @@ public class HelloServer {
   
     public static void main(String[] args) throws Exception {  
         HelloServer server = new HelloServer();  
+        System.out.println("服务端启动！");
         server.start(8000);  
     }  
 }

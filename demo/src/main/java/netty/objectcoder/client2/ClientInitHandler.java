@@ -20,8 +20,16 @@ public class ClientInitHandler extends ChannelInboundHandlerAdapter{
 	    @Override  
 	    public void channelActive(ChannelHandlerContext ctx) throws Exception {  
 	        logger.info("ClientInitHandler.channelActive");  
-	        System.out.println("ClientInitHandler.channelActive");
+//	        System.out.println("ClientInitHandler.channelActive");
 	        ctx.write(person);  
 	        ctx.flush();  
-	    }  
+	    }
+		@Override
+		public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+			if (this==ctx.pipeline().last()) {
+				System.out.println("客户端异常"+cause);
+			}
+		}  
+	    
+	    
 }

@@ -8,7 +8,11 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-
+/**
+ * 服务端处理业务
+ * @author yanChaoLiu
+ *
+ */
 public class HelloServerInHandler extends ChannelInboundHandlerAdapter{
 	private static Logger logger = LoggerFactory  
             .getLogger(HelloServerInHandler.class);  
@@ -17,6 +21,7 @@ public class HelloServerInHandler extends ChannelInboundHandlerAdapter{
     public void channelRead(ChannelHandlerContext ctx, Object msg)  
             throws Exception {  
         logger.info("HelloServerInHandler.channelRead");  
+//        System.out.println("HelloServerInHandler.channelRead");
         ByteBuf result = (ByteBuf) msg;  
         //result.readableBytes()未读的消息大小
         byte[] result1 = new byte[result.readableBytes()];  

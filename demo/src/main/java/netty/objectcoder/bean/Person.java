@@ -1,7 +1,7 @@
 package netty.objectcoder.bean;
 
 import java.io.Serializable;
-//// 必须实现Serializable接口 
+// 必须实现Serializable接口 
 public class Person implements Serializable{
 	private static final long   serialVersionUID    = 1L;  
     private String  name;  

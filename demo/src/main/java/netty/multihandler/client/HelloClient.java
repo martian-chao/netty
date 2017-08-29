@@ -25,7 +25,6 @@ public class HelloClient {
                 }  
             });  
   
-            // Start the client.  
             ChannelFuture f = b.connect(host, port).sync();  
             f.channel().closeFuture().sync();  
         } finally {  

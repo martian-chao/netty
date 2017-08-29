@@ -26,7 +26,7 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter{
 //		byte[] req = new byte[buf.readableBytes()];
 //		buf.readBytes(req);
 //		String body = new String(req,"UTF-8");
-		Thread.sleep(200);
+//		Thread.sleep(100);
 		System.out.println("服务端第"+(++counter)+"次，接收到客户端的命令："+body);
 		//释放资源
 //		buf.release();

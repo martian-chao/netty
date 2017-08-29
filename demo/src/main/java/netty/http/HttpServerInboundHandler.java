@@ -63,7 +63,7 @@ public class HttpServerInboundHandler extends ChannelInboundHandlerAdapter{
     @Override  
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {  
         logger.info("HttpServerInboundHandler.channelReadComplete");  
-        System.out.println("HttpServerInboundHandler.channelReadComplete");
+//        System.out.println("HttpServerInboundHandler.channelReadComplete");
         ctx.flush();  
     }  
 }

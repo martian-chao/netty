@@ -23,7 +23,7 @@ public class StringDecoder extends ChannelInboundHandlerAdapter{
     @Override  
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
         logger.info("StringDecoder : msg's type is " + msg.getClass());  
-        System.out.println("StringDecoder : msg's type is " + msg.getClass());
+//        System.out.println("StringDecoder : msg's type is " + msg.getClass());
         if (msg instanceof HttpRequest) {  
             HttpRequest request = (HttpRequest) msg;  
             reader = new ByteBufToBytes((int) HttpHeaders.getContentLength(request));  
@@ -36,7 +36,7 @@ public class StringDecoder extends ChannelInboundHandlerAdapter{
             if (reader.isEnd()) {  
                 byte[] clientMsg = reader.readFull();  
                 logger.info("StringDecoder : change httpcontent to string ");  
-                System.out.println("StringDecoder : change httpcontent to string ");
+//                System.out.println("StringDecoder : change httpcontent to string ");
                 ctx.fireChannelRead(new String(clientMsg));  
             }  
         }  

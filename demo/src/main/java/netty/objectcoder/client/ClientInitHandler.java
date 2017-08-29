@@ -17,11 +17,11 @@ public class ClientInitHandler extends ChannelInboundHandlerAdapter {
 	    @Override  
 	    public void channelActive(ChannelHandlerContext ctx) throws Exception {  
 	        logger.info("HelloClientIntHandler.channelActive");  
-	        System.out.println("HelloClientIntHandler.channelActive");
+//	        System.out.println("HelloClientIntHandler.channelActive");
 	        Person person = new Person();  
-	        person.setName("guowl");  
+	        person.setName("liu");  
 	        person.setSex("man");  
-	        person.setAge(30);  
+	        person.setAge(99);  
 	        ctx.write(person);  
 	        ctx.flush();  
 	    }  

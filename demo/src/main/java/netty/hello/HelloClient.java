@@ -8,7 +8,11 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-
+/**
+ * 客户端
+ * @author yanChaoLiu
+ *
+ */
 public class HelloClient {
 	public void connect(String host, int port) throws Exception {  
         EventLoopGroup workerGroup = new NioEventLoopGroup();  

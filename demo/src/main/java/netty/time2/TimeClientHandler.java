@@ -36,7 +36,7 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter{
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		
 		ByteBuf buf=null;
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1000; i++) {
 			//这里体现了Netty的高效性
 			buf=Unpooled.buffer(req.length);
 			buf.writeBytes(req);

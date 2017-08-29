@@ -13,8 +13,8 @@ public class InboundHandler2 extends ChannelInboundHandlerAdapter{
     @Override  
     // 读取Client发送的信息，并打印出来  
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
-//        logger.info("InboundHandler2.channelRead: ctx :" + ctx);  
-        System.out.println("InboundHandler2.channelRead: ctx :" + ctx);
+        logger.info("InboundHandler2.channelRead");  
+//        System.out.println("InboundHandler2.channelRead: ctx :" + ctx);
         ByteBuf result = (ByteBuf) msg;  
         byte[] result1 = new byte[result.readableBytes()];  
         result.readBytes(result1);  
@@ -27,8 +27,8 @@ public class InboundHandler2 extends ChannelInboundHandlerAdapter{
   
     @Override  
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {  
-//        logger.info("InboundHandler2.channelReadComplete");  
-        System.out.println("InboundHandler2.channelReadComplete");
+        logger.info("InboundHandler2.channelReadComplete");  
+//        System.out.println("InboundHandler2.channelReadComplete");
         ctx.flush();  
     }
 }

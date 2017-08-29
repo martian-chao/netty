@@ -33,6 +33,7 @@ public class TimeClient {
 					protected void initChannel(SocketChannel ch) throws Exception {
 						//编码 解码器
 						//字节码信息进行断包处理
+						//解码器，将接收到的ByteBufs在行尾上拆分。 “n”和“r n”都被处理了。
 						ch.pipeline().addLast(new LineBasedFrameDecoder(1024));
 						//明文 处理
 						ch.pipeline().addLast(new StringDecoder());

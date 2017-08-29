@@ -29,7 +29,7 @@ public class Client2 {
 	                public void initChannel(SocketChannel ch) throws Exception {  
 	                    ch.pipeline().addLast(new StringEncoder());  
 	                    Person person = new Person();  
-	                    person.setName("guoxy");  
+	                    person.setName("xiaoqiao");  
 	                    person.setSex("girl");  
 	                    person.setAge(4);  
 	                    ch.pipeline().addLast(new ClientInitHandler(person));  

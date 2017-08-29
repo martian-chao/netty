@@ -19,7 +19,7 @@ public class BusinessHandler extends ChannelInboundHandlerAdapter{
 	    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
 	        Person person = (Person) msg;  
 	        logger.info("BusinessHandler read msg from client :" + person);  
-	        System.out.println("BusinessHandler read msg from client :" + person);
+//	        System.out.println("BusinessHandler read msg from client :" + person);
 	    }  
 	  
 	    @Override  
@@ -30,7 +30,7 @@ public class BusinessHandler extends ChannelInboundHandlerAdapter{
 	    @Override  
 	    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {  
 	    	if (this==ctx.pipeline().last()) {
-				System.out.println("服务端异常");
+				System.out.println("异常");
 			}
 	    	ctx.channel().close();
 	    	

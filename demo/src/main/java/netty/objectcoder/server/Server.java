@@ -41,6 +41,7 @@ public class Server {
 	  
 	    public static void main(String[] args) throws Exception {  
 	        Server server = new Server();  
+	        System.out.println("服务端启动。。");
 	        server.start(8000);  
 	    }  
 }

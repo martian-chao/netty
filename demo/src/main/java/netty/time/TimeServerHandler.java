@@ -12,6 +12,11 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 public class TimeServerHandler extends ChannelInboundHandlerAdapter{
+	//计数器
+	private int  counter; 
+	//分割符
+	private static String entry ="\r\n";
+	
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 		//业务处理
@@ -20,7 +25,8 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter{
 		byte[] req = new byte[buf.readableBytes()];
 		buf.readBytes(req);
 		String body = new String(req,"UTF-8");
-		System.out.println("服务端接收到客户端的命令："+body);
+		Thread.sleep(200);
+		System.out.println("服务端第"+(++counter)+"次，接收到客户端的命令："+body);
 		//释放资源
 		buf.release();
 		
@@ -28,11 +34,11 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter{
 		
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		//
-		String currenttime="QUERY TIME ORDER".equalsIgnoreCase(body)? 
+		String currenttime=("QUERY TIME ORDER"+entry).equalsIgnoreCase(body)? 
 				simpleDateFormat.format(new Date(System.currentTimeMillis())):"BAD REQUEST";
 		//
 		//Unpooled缓冲池，通过该缓冲池拿到bytebuf发送缓冲池
-		ByteBuf reqs = Unpooled.copiedBuffer(currenttime.getBytes());
+		ByteBuf reqs = Unpooled.copiedBuffer((currenttime+entry).getBytes());
 		//通过ChannelHandlerContext缓冲池里的内容写给客户端
 		ctx.writeAndFlush(reqs);
 		

@@ -11,16 +11,16 @@ public class InboundHandler1 extends ChannelInboundHandlerAdapter{
 	  
 	    @Override  
 	    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
-//	        logger.info("InboundHandler1.channelRead: ctx :" + ctx);  
-	        System.out.println("InboundHandler1.channelRead: ctx :" + ctx);
+	        logger.info("InboundHandler1.channelRead" );  
+//	        System.out.println("InboundHandler1.channelRead: ctx :" + ctx);
 	        // 通知执行下一个InboundHandler  
 	        ctx.fireChannelRead(msg);  
 	    }  
 	  
 	    @Override  
 	    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {  
-//	        logger.info("InboundHandler1.channelReadComplete");  
-	    	System.out.println("InboundHandler1.channelReadComplete");
+	        logger.info("InboundHandler1.channelReadComplete");  
+//	    	System.out.println("InboundHandler1.channelReadComplete");
 	        ctx.flush();  
 	    } 
 	

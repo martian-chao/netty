@@ -12,9 +12,10 @@ public class OutboundHandler2 extends ChannelOutboundHandlerAdapter{
     
     @Override  
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {  
-//        logger.info("OutboundHandler2.write");  
-    	System.out.println("OutboundHandler2.write");
+        logger.info("OutboundHandler2.write");  
+//    	System.out.println("OutboundHandler2.write");
         // 执行下一个OutboundHandler  
-        super.write(ctx, msg, promise);  
+//        super.write(ctx, msg, promise);  
+        ctx.write(msg);
     }  
 }

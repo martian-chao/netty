@@ -28,9 +28,9 @@ public class Client {
                 public void initChannel(SocketChannel ch) throws Exception {  
                     ch.pipeline().addLast(new PersonEncoder());  
                     Person person = new Person();  
-                    person.setName("guowl");  
+                    person.setName("liuyc");  
                     person.setSex("man");  
-                    person.setAge(30);  
+                    person.setAge(99);  
                     ch.pipeline().addLast(new ClientInitHandler(person));  
                 }  
             });  

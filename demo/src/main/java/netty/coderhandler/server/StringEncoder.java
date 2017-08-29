@@ -28,7 +28,7 @@ public class StringEncoder extends ChannelOutboundHandlerAdapter{
     @Override  
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {  
         logger.info("StringEncoder response to client.");  
-        System.out.println("StringEncoder response to client.");
+//        System.out.println("StringEncoder response to client.");
         String serverMsg = (String) msg;  
   
         FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(serverMsg  

@@ -1,11 +1,15 @@
 package netty.coderhandler.client;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.HttpContent;
 import io.netty.handler.codec.http.HttpHeaders;
 import io.netty.handler.codec.http.HttpResponse;
+import netty.coderhandler.server.BusinessHandler;
 import netty.utils.ByteBufToBytes;
 
 /**
@@ -14,10 +18,12 @@ import netty.utils.ByteBufToBytes;
  *
  */
 public class ClientInitHandler extends ChannelInboundHandlerAdapter{
+	private Logger  logger  = LoggerFactory.getLogger(ClientInitHandler.class);
 	 private ByteBufToBytes  reader;  
-	  
+	  //接收服务器的消息
 	    @Override  
 	    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
+	    	logger.info("ClientInitHandler_channelRead"+msg.getClass());
 	        if (msg instanceof HttpResponse) {  
 	            HttpResponse response = (HttpResponse) msg;  
 	            if (HttpHeaders.isContentLengthSet(response)) {  

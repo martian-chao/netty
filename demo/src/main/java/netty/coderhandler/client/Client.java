@@ -2,6 +2,9 @@ package netty.coderhandler.client;
 
 import java.net.URI;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFuture;
@@ -17,6 +20,7 @@ import io.netty.handler.codec.http.HttpMethod;
 import io.netty.handler.codec.http.HttpRequestEncoder;
 import io.netty.handler.codec.http.HttpResponseDecoder;
 import io.netty.handler.codec.http.HttpVersion;
+import netty.coderhandler.server.BusinessHandler;
 
 /**
  * Client 与Server端建立连接，并向Server端发送HttpRequest请求
@@ -24,6 +28,7 @@ import io.netty.handler.codec.http.HttpVersion;
  *
  */
 public class Client {
+	private Logger  logger  = LoggerFactory.getLogger(Client.class);
 	public void connect(String host, int port) throws Exception {  
         EventLoopGroup workerGroup = new NioEventLoopGroup();  
   
@@ -43,7 +48,7 @@ public class Client {
   
             // Start the client.  
             ChannelFuture f = b.connect(host, port).sync();  
-  
+            logger.info("http client");
             URI uri = new URI("http://127.0.0.1:8000");  
             String msg = "Are you ok?";  
             DefaultFullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.POST,  

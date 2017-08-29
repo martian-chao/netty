@@ -15,7 +15,11 @@ public class ByteBufToBytes {
 	    private boolean end = true;  
 	  
 	    public ByteBufToBytes() {}  
-	  
+	    
+	    /**
+	     * 构建一个指定大小的缓冲区
+	     * @param length
+	     */
 	    public ByteBufToBytes(int length) {  
 	        temp = Unpooled.buffer(length);  
 	    }  
@@ -32,7 +36,10 @@ public class ByteBufToBytes {
 	    public boolean isEnd() {  
 	        return end;  
 	    }  
-	  
+	    /**
+	     * 读取所有的数据
+	     * @return
+	     */
 	    public byte[] readFull() {  
 	        if (end) {  
 	            byte[] contentByte = new byte[this.temp.readableBytes()];  
@@ -43,7 +50,11 @@ public class ByteBufToBytes {
 	            return null;  
 	        }  
 	    }  
-	  
+	    /**
+	     * 将缓冲区中的数据写入到指定字节数组中，
+	     * @param datas
+	     * @return
+	     */
 	    public byte[] read(ByteBuf datas) {  
 	        byte[] bytes = new byte[datas.readableBytes()];  
 	        datas.readBytes(bytes);  

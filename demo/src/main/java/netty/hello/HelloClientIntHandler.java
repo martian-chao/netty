@@ -14,8 +14,8 @@ public class HelloClientIntHandler  extends ChannelInboundHandlerAdapter{
     // 接收server端的消息，并打印出来  
     @Override  
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
-//        logger.info("HelloClientIntHandler.channelRead");  
-    	System.out.println("HelloClientIntHandler.channelRead");
+        logger.info("HelloClientIntHandler.channelRead");  
+//    	System.out.println("HelloClientIntHandler.channelRead");
         ByteBuf result = (ByteBuf) msg;  
         byte[] result1 = new byte[result.readableBytes()];  
         result.readBytes(result1);  
@@ -26,8 +26,8 @@ public class HelloClientIntHandler  extends ChannelInboundHandlerAdapter{
     // 连接成功后，向server发送消息  
     @Override  
     public void channelActive(ChannelHandlerContext ctx) throws Exception {  
-//        logger.info("HelloClientIntHandler.channelActive");  
-    	System.out.println("HelloClientIntHandler.channelActive");
+        logger.info("HelloClientIntHandler.channelActive");  
+//    	System.out.println("HelloClientIntHandler.channelActive");
         String msg = "Are you ok?";  
 //        ByteBuf encoded = ctx.alloc().buffer(4 * msg.length());  
 //        encoded.writeBytes(msg.getBytes());  

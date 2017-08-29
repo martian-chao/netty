@@ -18,7 +18,7 @@ public class BusinessHandler  extends ChannelInboundHandlerAdapter{
 	    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {  
 	        String clientMsg = "client said : " + (String) msg;  
 	        logger.info("BusinessHandler read msg from client :" + clientMsg);  
-	        System.out.println("BusinessHandler read msg from client :" + clientMsg);
+//	        System.out.println("BusinessHandler read msg from client :" + clientMsg);
 	        ctx.write("I am very OK!");  
 	    }  
 	  

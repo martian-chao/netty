@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <netty.version>4.1.14.Final</netty.version>
     <slf4j.version>1.7.21</slf4j.version>
-    <log4j.version>1.2.17</log4j.version>
+    
   </properties>
 
   <dependencies>
@@ -30,7 +30,6 @@
 	      <groupId>io.netty</groupId>
 	      <artifactId>netty-all</artifactId>
 	 	<version>${netty.version}</version>
-	      
     </dependency>
     
     <dependency>
@@ -38,23 +37,16 @@
 		<artifactId>slf4j-api</artifactId>
 		<version>${slf4j.version}</version>
 	</dependency>
-	<!-- <dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-nop</artifactId>
-		<version>${slf4j.version}</version>
-	</dependency> -->
+	
 	
 	 <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j.version}</version>
-       </dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-log4j12</artifactId>
+         <version>${slf4j.version}</version>
+      </dependency>
+     
 	
-	<dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
+	
     
     
   </dependencies>
