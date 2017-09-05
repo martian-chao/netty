@@ -1,4 +1,4 @@
-package netty.hello;
+package netty.multi_port_ip;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

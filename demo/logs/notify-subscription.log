@@ -1,6 +1,4 @@
-2017-08-28 22:14:09,136 - HelloServerInHandler.channelRead
-2017-08-28 22:14:09,163 - HelloClientIntHandler.channelRead
-2017-08-28 22:16:08,652 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+2017-09-03 08:44:59,405 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
 java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at sun.nio.ch.SocketDispatcher.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
@@ -18,10 +16,10 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:745)
-2017-08-28 22:33:03,225 - HelloClientIntHandler.channelActive
-2017-08-28 22:33:03,276 - HelloServerInHandler.channelRead
-2017-08-28 22:33:03,288 - HelloClientIntHandler.channelRead
-2017-08-28 23:03:55,808 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+2017-09-04 10:48:12,459 - HelloClientIntHandler.channelActive
+2017-09-04 10:48:12,540 - HelloServerInHandler.channelRead
+2017-09-04 10:48:12,555 - HelloClientIntHandler.channelRead
+2017-09-04 10:48:20,787 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
 java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at sun.nio.ch.SocketDispatcher.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
@@ -39,187 +37,45 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:745)
-2017-08-28 23:56:56,739 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x2189fa29, L:/127.0.0.1:8000 - R:/127.0.0.1:63862])
-2017-08-28 23:56:56,745 - InboundHandler1.channelReadComplete
-2017-08-28 23:56:56,747 - InboundHandler1.channelReadComplete
-2017-08-29 00:01:18,997 - HelloClientIntHandler.channelActive
-2017-08-29 00:01:19,051 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xf55568e7, L:/127.0.0.1:8000 - R:/127.0.0.1:64114])
-2017-08-29 00:01:19,056 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xf55568e7, L:/127.0.0.1:8000 - R:/127.0.0.1:64114])
-2017-08-29 00:01:19,059 - OutboundHandler2.write
-2017-08-29 00:01:19,059 - OutboundHandler1.write
-2017-08-29 00:01:19,061 - InboundHandler1.channelReadComplete
-2017-08-29 00:01:19,062 - HelloClientIntHandler.channelRead
-2017-08-29 00:01:19,063 - InboundHandler1.channelReadComplete
-2017-08-29 00:02:53,132 - HelloClientIntHandler.channelActive
-2017-08-29 00:02:53,184 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0xbec2f47d, L:/127.0.0.1:8000 - R:/127.0.0.1:64233])
-2017-08-29 00:02:53,184 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xbec2f47d, L:/127.0.0.1:8000 - R:/127.0.0.1:64233])
-2017-08-29 00:02:53,186 - OutboundHandler2.write
-2017-08-29 00:02:53,187 - OutboundHandler1.write
-2017-08-29 00:02:53,188 - InboundHandler1.channelReadComplete
-2017-08-29 00:02:53,189 - HelloClientIntHandler.channelRead
-2017-08-29 00:02:53,190 - InboundHandler1.channelReadComplete
-2017-08-29 09:28:00,048 - HelloClientIntHandler.channelActive
-2017-08-29 09:28:00,181 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x47744d71, L:/127.0.0.1:8000 - R:/127.0.0.1:49830])
-2017-08-29 09:28:00,182 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x47744d71, L:/127.0.0.1:8000 - R:/127.0.0.1:49830])
-2017-08-29 09:28:00,185 - OutboundHandler2.write
-2017-08-29 09:28:00,185 - OutboundHandler1.write
-2017-08-29 09:28:00,187 - InboundHandler1.channelReadComplete
-2017-08-29 09:28:00,189 - HelloClientIntHandler.channelRead
-2017-08-29 09:28:00,190 - InboundHandler1.channelReadComplete
-2017-08-29 09:30:31,548 - HelloClientIntHandler.channelActive
-2017-08-29 09:30:31,603 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x709e8805, L:/127.0.0.1:8000 - R:/127.0.0.1:49998])
-2017-08-29 09:30:31,604 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x709e8805, L:/127.0.0.1:8000 - R:/127.0.0.1:49998])
-2017-08-29 09:30:31,607 - OutboundHandler2.write
-2017-08-29 09:30:31,607 - OutboundHandler1.write
-2017-08-29 09:30:31,609 - InboundHandler1.channelReadComplete
-2017-08-29 09:30:31,630 - HelloClientIntHandler.channelRead
-2017-08-29 09:30:31,631 - InboundHandler1.channelReadComplete
-2017-08-29 09:36:02,398 - HelloClientIntHandler.channelActive
-2017-08-29 09:36:02,459 - InboundHandler1.channelRead: ctx :ChannelHandlerContext(InboundHandler1#0, [id: 0x52410576, L:/127.0.0.1:8000 - R:/127.0.0.1:50357])
-2017-08-29 09:36:02,459 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0x52410576, L:/127.0.0.1:8000 - R:/127.0.0.1:50357])
-2017-08-29 09:36:02,463 - OutboundHandler2.write
-2017-08-29 09:36:02,463 - OutboundHandler1.write
-2017-08-29 09:36:02,465 - InboundHandler1.channelReadComplete
-2017-08-29 09:36:02,466 - HelloClientIntHandler.channelRead
-2017-08-29 09:36:02,467 - InboundHandler1.channelReadComplete
-2017-08-29 09:49:27,671 - HelloClientIntHandler.channelActive
-2017-08-29 09:49:27,719 - InboundHandler1.channelRead
-2017-08-29 09:49:27,729 - InboundHandler2.channelRead: ctx :ChannelHandlerContext(InboundHandler2#0, [id: 0xdee94521, L:/127.0.0.1:8000 - R:/127.0.0.1:51112])
-2017-08-29 09:49:27,731 - OutboundHandler2.write
-2017-08-29 09:49:27,732 - OutboundHandler1.write
-2017-08-29 09:49:27,739 - InboundHandler1.channelReadComplete
-2017-08-29 09:49:27,741 - HelloClientIntHandler.channelRead
-2017-08-29 09:49:27,741 - InboundHandler1.channelReadComplete
-2017-08-29 09:50:09,285 - HelloClientIntHandler.channelActive
-2017-08-29 09:50:09,337 - InboundHandler1.channelRead
-2017-08-29 09:50:09,338 - InboundHandler2.channelRead: ctx 
-2017-08-29 09:50:09,341 - OutboundHandler2.write
-2017-08-29 09:50:09,341 - OutboundHandler1.write
-2017-08-29 09:50:09,349 - InboundHandler1.channelReadComplete
-2017-08-29 09:50:09,350 - HelloClientIntHandler.channelRead
-2017-08-29 09:50:09,351 - InboundHandler1.channelReadComplete
-2017-08-29 09:50:41,260 - HelloClientIntHandler.channelActive
-2017-08-29 09:50:41,312 - InboundHandler1.channelRead
-2017-08-29 09:50:41,312 - InboundHandler2.channelRead
-2017-08-29 09:50:41,316 - OutboundHandler2.write
-2017-08-29 09:50:41,316 - OutboundHandler1.write
-2017-08-29 09:50:41,324 - InboundHandler1.channelReadComplete
-2017-08-29 09:50:41,326 - HelloClientIntHandler.channelRead
-2017-08-29 09:50:41,326 - InboundHandler1.channelReadComplete
-2017-08-29 09:59:03,549 - HelloClientIntHandler.channelActive
-2017-08-29 09:59:03,600 - InboundHandler1.channelRead
-2017-08-29 09:59:03,601 - InboundHandler2.channelRead
-2017-08-29 09:59:03,603 - OutboundHandler2.write
-2017-08-29 09:59:03,603 - OutboundHandler1.write
-2017-08-29 09:59:03,611 - InboundHandler1.channelReadComplete
-2017-08-29 09:59:03,613 - HelloClientIntHandler.channelRead
-2017-08-29 09:59:03,614 - InboundHandler1.channelReadComplete
-2017-08-29 10:02:16,763 - HelloClientIntHandler.channelActive
-2017-08-29 10:02:16,813 - InboundHandler1.channelRead
-2017-08-29 10:02:16,814 - InboundHandler2.channelRead
-2017-08-29 10:02:16,815 - OutboundHandler2.write
-2017-08-29 10:02:16,815 - OutboundHandler1.write
-2017-08-29 10:02:16,824 - InboundHandler1.channelReadComplete
-2017-08-29 10:02:16,825 - HelloClientIntHandler.channelRead
-2017-08-29 10:02:16,826 - InboundHandler1.channelReadComplete
-2017-08-29 10:06:59,972 - HelloClientIntHandler.channelActive
-2017-08-29 10:07:00,024 - InboundHandler1.channelRead
-2017-08-29 10:07:00,025 - InboundHandler2.channelRead
-2017-08-29 10:07:00,028 - OutboundHandler2.write
-2017-08-29 10:07:00,028 - OutboundHandler1.write
-2017-08-29 10:07:00,036 - InboundHandler1.channelReadComplete
-2017-08-29 10:07:00,038 - HelloClientIntHandler.channelRead
-2017-08-29 10:07:00,038 - InboundHandler1.channelReadComplete
-2017-08-29 10:29:44,504 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 10:29:44,511 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 10:29:44,511 - StringDecoder : change httpcontent to string 
-2017-08-29 10:29:44,511 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 10:29:44,511 - StringEncoder response to client.
-2017-08-29 10:37:15,687 - http client
-2017-08-29 10:37:15,922 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 10:37:15,951 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 10:37:15,952 - StringDecoder : change httpcontent to string 
-2017-08-29 10:37:15,952 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 10:37:15,952 - StringEncoder response to client.
-2017-08-29 10:37:49,796 - http client
-2017-08-29 10:37:49,830 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 10:37:49,830 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 10:37:49,831 - StringDecoder : change httpcontent to string 
-2017-08-29 10:37:49,831 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 10:37:49,831 - StringEncoder response to client.
-2017-08-29 10:38:03,307 - http client
-2017-08-29 10:38:03,349 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 10:38:03,349 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 10:38:03,349 - StringDecoder : change httpcontent to string 
-2017-08-29 10:38:03,349 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 10:38:03,349 - StringEncoder response to client.
-2017-08-29 10:38:28,286 - http client
-2017-08-29 10:38:28,375 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 10:38:28,380 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 10:38:28,381 - StringDecoder : change httpcontent to string 
-2017-08-29 10:38:28,381 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 10:38:28,381 - StringEncoder response to client.
-2017-08-29 10:40:58,501 - http client
-2017-08-29 10:40:58,717 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 10:40:58,723 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 10:40:58,723 - StringDecoder : change httpcontent to string 
-2017-08-29 10:40:58,723 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 10:40:58,724 - StringEncoder response to client.
-2017-08-29 10:40:58,732 - ClientInitHandler_channelRead
-2017-08-29 10:40:58,736 - ClientInitHandler_channelRead
-2017-08-29 11:17:07,380 - http client
-2017-08-29 11:17:07,446 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 11:17:07,476 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 11:17:07,476 - StringDecoder : change httpcontent to string 
-2017-08-29 11:17:07,476 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 11:17:07,476 - StringEncoder response to client.
-2017-08-29 11:17:07,486 - ClientInitHandler_channelRead
-2017-08-29 11:17:07,492 - ClientInitHandler_channelRead
-2017-08-29 11:21:06,956 - http client
-2017-08-29 11:21:07,055 - StringDecoder : msg's type is DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST http://127.0.0.1:8000/ HTTP/1.1
-Host: 127.0.0.1
-Connection: keep-alive
-Content-Length: 11
-2017-08-29 11:21:07,061 - StringDecoder : msg's type is DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 11, cap: 11/11, unwrapped: PooledUnsafeDirectByteBuf(ridx: 112, widx: 112, cap: 1024)), decoderResult: success)
-2017-08-29 11:21:07,061 - StringDecoder : change httpcontent to string 
-2017-08-29 11:21:07,061 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 11:21:07,061 - StringEncoder response to client.
-2017-08-29 11:21:07,072 - ClientInitHandler_channelRead
-2017-08-29 11:21:07,077 - ClientInitHandler_channelRead
-2017-08-29 11:26:04,288 - http client
-2017-08-29 11:26:04,362 - StringDecoder : msg's type is DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST http://127.0.0.1:8000/ HTTP/1.1
-Host: 127.0.0.1
-Connection: keep-alive
-Content-Length: 11
-2017-08-29 11:26:04,367 - StringDecoder : msg's type is DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 11, cap: 11/11, unwrapped: PooledUnsafeDirectByteBuf(ridx: 112, widx: 112, cap: 1024)), decoderResult: success)
-2017-08-29 11:26:04,367 - StringDecoder : change httpcontent to string DefaultLastHttpContent(data: PooledSlicedByteBuf(ridx: 11, widx: 11, cap: 11/11, unwrapped: PooledUnsafeDirectByteBuf(ridx: 112, widx: 112, cap: 1024)), decoderResult: success)
-2017-08-29 11:26:04,367 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 11:26:04,368 - StringEncoder response to client.
-2017-08-29 11:26:04,375 - ClientInitHandler_channelRead
-2017-08-29 11:26:04,380 - ClientInitHandler_channelRead
-2017-08-29 11:27:42,360 - http client
-2017-08-29 11:27:42,441 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultHttpRequest
-2017-08-29 11:27:42,447 - StringDecoder : msg's type is class io.netty.handler.codec.http.DefaultLastHttpContent
-2017-08-29 11:27:42,447 - StringDecoder : change httpcontent to string 
-2017-08-29 11:27:42,448 - BusinessHandler read msg from client :client said : Are you ok?
-2017-08-29 11:27:42,448 - StringEncoder response to client.
-2017-08-29 11:27:42,458 - ClientInitHandler_channelRead
-2017-08-29 11:27:42,462 - ClientInitHandler_channelRead
-2017-08-29 11:41:53,776 - HttpServerInboundHandler.channelReadComplete
-2017-08-29 11:41:53,784 - HttpServerInboundHandler.channelReadComplete
-2017-08-29 12:57:49,371 - HelloClientIntHandler.channelActive
-2017-08-29 12:57:49,710 - BusinessHandler read msg from client :name:guowl sex:man age:30
-2017-08-29 13:03:53,077 - HelloClientIntHandler.channelActive
-2017-08-29 13:03:53,097 - PersonEncoder
-2017-08-29 13:03:53,124 - PersonDecoder
-2017-08-29 13:03:53,131 - BusinessHandler read msg from client :name:guowl sex:man age:30
-2017-08-29 13:05:24,586 - HelloClientIntHandler.channelActive
-2017-08-29 13:05:24,608 - PersonEncoder
-2017-08-29 13:05:24,635 - PersonDecoder
-2017-08-29 13:05:24,642 - BusinessHandler read msg from client :name:liu sex:man age:99
-2017-08-29 13:06:54,939 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+2017-09-05 16:25:08,124 - LoginRequestHandler-channelActive
+2017-09-05 16:25:08,152 - NettyMessageEncoder-encode
+2017-09-05 16:25:08,166 - MarshallingEncoder-encode
+2017-09-05 16:25:08,204 - NettyMessageDecoder-decode
+2017-09-05 16:25:08,215 - MarshallingDecoder-decode
+2017-09-05 16:25:08,218 - LoginResponseHandler-channelRead
+2017-09-05 16:25:08,218 - NettyMessageEncoder-encode
+2017-09-05 16:25:08,225 - MarshallingEncoder-encode
+2017-09-05 16:25:08,233 - NettyMessageDecoder-decode
+2017-09-05 16:25:08,236 - MarshallingDecoder-decode
+2017-09-05 16:25:08,238 - LoginRequestHandler-channelRead
+2017-09-05 16:25:08,238 - HeartbeatHandler-channelRead
+2017-09-05 16:25:08,239 - HeartbeatTask-run
+2017-09-05 16:25:08,239 - NettyMessageEncoder-encode
+2017-09-05 16:25:08,239 - MarshallingEncoder-encode
+2017-09-05 16:25:08,239 - NettyMessageDecoder-decode
+2017-09-05 16:25:08,240 - MarshallingDecoder-decode
+2017-09-05 16:25:08,240 - LoginResponseHandler-channelRead
+2017-09-05 16:25:08,240 - HeartbeatHandler-channelRead
+2017-09-05 16:25:08,240 - NettyMessageEncoder-encode
+2017-09-05 16:25:08,240 - MarshallingEncoder-encode
+2017-09-05 16:25:08,243 - NettyMessageDecoder-decode
+2017-09-05 16:25:08,243 - MarshallingDecoder-decode
+2017-09-05 16:25:08,243 - LoginRequestHandler-channelRead
+2017-09-05 16:25:08,243 - HeartbeatHandler-channelRead
+2017-09-05 16:25:38,239 - HeartbeatTask-run
+2017-09-05 16:25:38,239 - NettyMessageEncoder-encode
+2017-09-05 16:25:38,239 - MarshallingEncoder-encode
+2017-09-05 16:25:38,240 - NettyMessageDecoder-decode
+2017-09-05 16:25:38,241 - MarshallingDecoder-decode
+2017-09-05 16:25:38,241 - LoginResponseHandler-channelRead
+2017-09-05 16:25:38,241 - HeartbeatHandler-channelRead
+2017-09-05 16:25:38,241 - NettyMessageEncoder-encode
+2017-09-05 16:25:38,243 - MarshallingEncoder-encode
+2017-09-05 16:25:38,243 - NettyMessageDecoder-decode
+2017-09-05 16:25:38,243 - MarshallingDecoder-decode
+2017-09-05 16:25:38,243 - LoginRequestHandler-channelRead
+2017-09-05 16:25:38,244 - HeartbeatHandler-channelRead
+2017-09-05 16:25:48,203 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
 java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at sun.nio.ch.SocketDispatcher.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
@@ -237,259 +93,3 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:07:06,954 - HelloClientIntHandler.channelActive
-2017-08-29 13:07:06,975 - PersonEncoder
-2017-08-29 13:07:07,123 - PersonDecoder
-2017-08-29 13:07:07,133 - BusinessHandler read msg from client :name:liu sex:man age:99
-2017-08-29 13:23:48,284 - ClientInitHandler.channelActive
-2017-08-29 13:23:48,339 - BusinessHandler read msg from client:name:liuyc sex:man age:99
-2017-08-29 13:24:01,590 - ClientInitHandler.channelActive
-2017-08-29 13:24:01,613 - BusinessHandler read msg from client:name:小乔 sex:girl age:4
-2017-08-29 13:24:01,614 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release0(AbstractReferenceCountedByteBuf.java:101)
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release(AbstractReferenceCountedByteBuf.java:89)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:273)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1342)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:934)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:31:39,809 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:31:39,809 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:32:21,202 - ClientInitHandler.channelActive
-2017-08-29 13:32:21,249 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 13:32:21,250 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release0(AbstractReferenceCountedByteBuf.java:101)
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release(AbstractReferenceCountedByteBuf.java:89)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:273)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1342)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:934)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:52:48,754 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:53:41,038 - ClientInitHandler.channelActive
-2017-08-29 13:53:41,087 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 13:54:19,610 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:54:36,089 - ClientInitHandler.channelActive
-2017-08-29 13:54:36,246 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 13:56:29,779 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 13:56:43,786 - ClientInitHandler.channelActive
-2017-08-29 13:56:43,834 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 13:56:43,835 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release0(AbstractReferenceCountedByteBuf.java:101)
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release(AbstractReferenceCountedByteBuf.java:89)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:273)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1342)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:934)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 14:01:19,856 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 14:01:35,665 - ClientInitHandler.channelActive
-2017-08-29 14:01:35,714 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 14:02:58,032 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 14:03:16,808 - ClientInitHandler.channelActive
-2017-08-29 14:03:16,855 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 14:15:58,327 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1106)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-2017-08-29 14:16:19,555 - ClientInitHandler.channelActive
-2017-08-29 14:16:19,602 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 14:24:40,998 - ClientInitHandler.channelActive
-2017-08-29 14:24:41,050 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 14:27:43,458 - ClientInitHandler.channelActive
-2017-08-29 14:27:43,505 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4
-2017-08-29 14:40:58,028 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-io.netty.channel.ChannelPipelineException: netty.objectcoder.server2.PersonDecoder.handlerRemoved() has thrown an exception.
-	at io.netty.channel.DefaultChannelPipeline.callHandlerRemoved0(DefaultChannelPipeline.java:645)
-	at io.netty.channel.DefaultChannelPipeline.destroyDown(DefaultChannelPipeline.java:891)
-	at io.netty.channel.DefaultChannelPipeline.destroyUp(DefaultChannelPipeline.java:857)
-	at io.netty.channel.DefaultChannelPipeline.destroy(DefaultChannelPipeline.java:849)
-	at io.netty.channel.DefaultChannelPipeline.access$700(DefaultChannelPipeline.java:45)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelUnregistered(DefaultChannelPipeline.java:1324)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregistered(AbstractChannelHandlerContext.java:181)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregistered(AbstractChannelHandlerContext.java:167)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelUnregistered(DefaultChannelPipeline.java:834)
-	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:752)
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:403)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release0(AbstractReferenceCountedByteBuf.java:101)
-	at io.netty.buffer.AbstractReferenceCountedByteBuf.release(AbstractReferenceCountedByteBuf.java:89)
-	at io.netty.handler.codec.ByteToMessageDecoder.handlerRemoved(ByteToMessageDecoder.java:238)
-	at io.netty.channel.DefaultChannelPipeline.callHandlerRemoved0(DefaultChannelPipeline.java:639)
-	... 15 more
-2017-08-29 14:41:36,936 - ClientInitHandler.channelActive
-2017-08-29 14:41:36,983 - BusinessHandler read msg from client:name:xiaoqiao sex:girl age:4

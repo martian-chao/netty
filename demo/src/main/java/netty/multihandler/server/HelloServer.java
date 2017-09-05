@@ -26,7 +26,8 @@ public class HelloServer {
                                     ch.pipeline().addLast(new OutboundHandler2());  
                                     // 注册两个InboundHandler，执行顺序为注册顺序，所以应该是InboundHandler1 InboundHandler2  
                                     ch.pipeline().addLast(new InboundHandler1());  
-                                    ch.pipeline().addLast(new InboundHandler2());  
+                                    ch.pipeline().addLast(new InboundHandler2());
+                                    
                                 }  
                             }).option(ChannelOption.SO_BACKLOG, 128)   
                     .childOption(ChannelOption.SO_KEEPALIVE, true);   

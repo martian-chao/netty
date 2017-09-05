@@ -1,4 +1,4 @@
-package netty.hello;
+package netty.multi_port_ip;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -12,7 +12,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * 服务端
  */
 public class HelloServer {
-	 public void start(String host,int port) throws Exception {  
+	 public void start(int port) throws Exception {  
 		 	//接收客户端业务请求
 	        EventLoopGroup bossGroup = new NioEventLoopGroup();  
 	        //处理客户端业务请求
@@ -32,7 +32,7 @@ public class HelloServer {
 	                    }).option(ChannelOption.SO_BACKLOG, 128)  
 	                    .childOption(ChannelOption.SO_KEEPALIVE, true);  
 	            //通知回调  绑定端口，同步等待成功.
-	            ChannelFuture f = b.bind(host,port).sync();  
+	            ChannelFuture f = b.bind(port).sync();  
 	            //等待服务器端监听端口关闭
 	            f.channel().closeFuture().sync();  
 	        } finally {  
@@ -45,6 +45,6 @@ public class HelloServer {
 	 public static void main(String[] args) throws Exception {  
 	        HelloServer server = new HelloServer();  
 	        System.out.println("服务器启动。。。");
-	        server.start("127.0.0.1",8000);  
+	        server.start(8000);  
 	    }  
 }
